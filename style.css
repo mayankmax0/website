@@ -266,7 +266,6 @@ ul li a:hover{
     color: #ff7200;
 }
 
-/* Background */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -275,7 +274,6 @@ body {
   color: #fff;
 }
 
-/* Container */
 .contact-section {
   padding: 60px 20px;
   backdrop-filter: blur(3px);
@@ -292,7 +290,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* Left Side */
 .contact-info {
   flex: 1;
   padding: 40px;
@@ -326,7 +323,6 @@ body {
   margin: 5px 0 0;
 }
 
-/* Right Side (Form) */
 .contact-form {
   flex: 1;
   padding: 40px;
@@ -377,9 +373,9 @@ body {
   background-color: #008b94;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
   }
 }
+
