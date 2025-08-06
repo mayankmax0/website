@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture Portal</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="main">
+
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">LECTURES</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="lecture.html">LECTURES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" placeholder="Type to text">
+                <a href="#"><button class="btn">Search</button></a>
+            </div>
+        </div>
+
+        <section class="lecture-gallery">
+            <h2 class="gallery-title"></h2>
+            <div class="gallery">
+                <div class="thumbnail" onclick="openModal('videos/lecture1.mp4')">
+                    <img src="mathematics-horizontal-banner-presentation-website-260nw-1798855321.webp" alt="Lecture 1">
+                    <p>Lecture 1: Mathematics</p>
+                </div>
+                <div class="thumbnail" onclick="openModal('videos/lecture2.mp4')">
+                    <img src="sketch-physics-lab-working-little-260nw-1810404688.webp" alt="Lecture 2">
+                    <p>Lecture 2: Physics</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="videoModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <video id="modalVideo" controls autoplay></video>
+            </div>
+        </div>
+    </div>
+    <section class="upload-section">
+  <h2>Upload a Lecture Video</h2>
+  <form action="upload.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="videoFile" accept="video/*" required>
+    <button type="submit">Upload</button>
+  </form>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>

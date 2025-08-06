@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(13ae0bd8de57fa10dd5833280f1f3051.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid#ff7200;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn:focus{
+    outline:none;
+}
+
+.srch.focus{
+    outline: none;
+
+}
+
+
+
+
+.lecture-gallery {
+  text-align: center;
+  padding: 100px 40px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  margin: 60px auto;
+  max-width: 1400px; 
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;         
+  margin-top: 50px;
+}
+
+
+.thumbnail {
+  width: 300px;      
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 14px;
+  backdrop-filter: blur(8px);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.thumbnail p {
+  margin-top: 12px;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  background: #000;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 80%;
+}
+
+.modal-content video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .thumbnail {
+    width: 90%;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .lecture-gallery {
+    padding: 60px 20px;
+  }
+}
+
+.upload-section {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 60px auto;
+  backdrop-filter: blur(6px);
+}
+
+.upload-section h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.upload-section input[type="file"] {
+  padding: 10px;
+  color: white;
+  background: transparent;
+  border: 1px solid #ff7200;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.upload-section button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff7200;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-section button:hover {
+  background-color: #e06300;
+}
